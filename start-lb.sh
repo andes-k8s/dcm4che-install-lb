@@ -1,5 +1,5 @@
 #!/bin/sh
-cd load_balancer
+cd lb_files
 docker-compose up -d 
 cd ..
 docker ps

@@ -1,5 +1,5 @@
 #!/bin/sh
-LB_FOLDER="load_balancer"
+LB_FOLDER="lb_files"
 
 git clone https://github.com/andes-k8s/dcm4che-load-balancer.git $LB_FOLDER
 git clone https://github.com/andes-k8s/dcm4che-cert-updater.git cert_updater
