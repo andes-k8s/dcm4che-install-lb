@@ -12,7 +12,7 @@ rm -Rf cert_updater
 
 cd $LB_FOLDER
 echo "Configuración del Load Balancer..."
-sh generate-conf.sh
+bash generate-conf.sh
 
 echo "LB instalado en $LB_FOLDER"
 echo "Pasos: "
