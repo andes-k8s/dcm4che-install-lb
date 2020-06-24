@@ -8,6 +8,6 @@ docker-compose down
 docker-compose up -d
 
 echo "Actualizando certificados en Kubernetes"
-sh k8s-update-cert.sh
+sh k8s-update-cert.sh fullchain.pem
 
 cd ..
