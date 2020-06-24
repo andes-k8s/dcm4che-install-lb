@@ -8,9 +8,11 @@ cp cert_updater/*.sh $LB_FOLDER/
 cp -R cert_updater/template $LB_FOLDER/
 cp cert_updater/README.md $LB_FOLDER/README_CERT_UPDATER.md
 mkdir $LB_FOLDER/certs
+rm -Rf cert_updater
 
 echo "LB instalado en $LB_FOLDER"
 echo "Pasos: "
+echo "  - En la carpeta del Load balancer ($LB_FOLDER)"
 echo "  - Correr ./generate-conf.sh (para generar archivos de configuracion del LB)"
 echo "  - Copiar kubeconfig del cluster en carpeta $LB_FOLDER"
 echo "  - Copiar los certificados (fullchain.pem y privkey.pem) en $LB_FOLDER/certs"
